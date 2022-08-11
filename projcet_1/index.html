@@ -5,12 +5,15 @@
     <meta charset='UTF-8'>
     <meta http-equiv='X-UA-Compatible' content='IE=edge'>
     <meta name='viewport' content='width=device-width, initial-scale=1.0'>
-    <title>Document</title>
+    <title>conter</title>
 
     <!-- CDN Font Awesome -->
     <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css'>
+    <!-- CDN Bootstrap -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <!-- qui sotto va il link CSS -->
     <link rel="stylesheet" href="./assets/style.css">
+
 
 </head>
 
@@ -21,15 +24,32 @@
     <header></header>
 
 
-    <main></main>
+    <main>
+        <div class="container">
+            <h1 class="text-center">vota la nuova foto profilo</h1>
+            <img class="img-size" src="./assets/img/DSC_0267.jpg" alt="foto profilo">
+            <div class="counter d-flex justify-content-around">
+                <div class="d-flex">
+                    <i onclick="like()" class="fa-solid fa-thumbs-up"></i>
+                    <div id="tumbsUp"> </div>
+                </div>
+                <i onclick="restart()" class="fa-solid fa-arrow-rotate-left"></i>
+                <div class="d-flex">
+                    <i onclick="unlike()" class="fa-solid fa-thumbs-down"></i>
+                    <div id="tumbsDown"> </div>
+                </div>
+            </div>
+        </div>
+    </main>
 
 
     <footer></footer>
 
 
-    <!-- CDN Vue JS -->
-    <script src='./assets/script.js'></script>
+
     <!-- qui sotto va messo il file javascript -->
+    <script src="./assets/script.js"></script>
+
 
 </body>
 
